@@ -25,9 +25,10 @@
 
                         <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
                             <a
-                                href="#"
+                                href="/"
                                 title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
+                                class="text-base text-white transition-all duration-200 hover:text-opacity-80
+                                {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
 
@@ -39,9 +40,10 @@
                             </a>
 
                             <a
-                                href="#"
+                                href="{{ route('service') }}"
                                 title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
+                                class="text-base text-white transition-all duration-200 hover:text-opacity-80
+                                {{ Request::is('/service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
 
@@ -426,6 +428,6 @@
             <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Scena Project</p>
         </div>
     </section>
-
+    
     </body>
 </html>
