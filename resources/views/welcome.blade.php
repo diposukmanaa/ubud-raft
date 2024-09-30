@@ -258,7 +258,7 @@
                 <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
             </div>
 
-            <div class="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
+            <div class="grid grid-cols-2 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-2 sm:grid-cols-2">
                 <div class="overflow-hidden bg-gray-100 rounded-md">
                     <div class="px-5 py-6">
                         <div class="flex items-center justify-between">
