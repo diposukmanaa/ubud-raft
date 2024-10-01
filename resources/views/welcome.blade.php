@@ -140,24 +140,24 @@
             </section>
         </div>
 
-        <section class="mt-20 pt-10 pb-52 overflow-hidden bg-white sm:pt-16 lg:pt-24">
+        <section id="video-section" class="mt-20 pt-10 pb-52 overflow-hidden bg-white sm:pt-16 lg:pt-24">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl pb-5">Experience the Thrill of Rafting Like Never Before</h2>
                     <p class="mt-4 text-base leading-relaxed text-gray-600">As adventure experts, we create unforgettable rafting experiences that blend excitement with the beauty of nature. Our meticulously planned trips offer more than just adventure – they provide a unique and meaningful connection with the great outdoors, making every moment of your journey truly memorable.</p>
                 </div>
-                <div class="relative w-full mt-10 sm:mt-16"  data-aos="fade-up" data-aos-duration="800">
+                <div class="relative w-full mt-10 sm:mt-16" data-aos="fade-up" data-aos-duration="800">
                     <div class="relative w-full max-w-4xl mx-auto -mb-16 rounded-lg shadow-xl overflow-hidden">
                         <div class="relative w-full" style="padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
                             <iframe 
-                                src="https://drive.google.com/file/d/1u3EM8VT-smfkpNUVbH2i7WfHW8HLXKEc/preview" 
-                                class="absolute top-0 left-0 w-full h-full" 
-                                allow="autoplay, encrypted-media"
+                                id="video-iframe"
+                                src="https://www.youtube.com/embed/rfdADqx7CEU" 
+                                class="absolute top-0 left-0 w-full h-full"
+                                allow="autoplay; encrypted-media"
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <!-- <div class="absolute inset-0 bg-black opacity-20 opa"></div> -->
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -171,46 +171,46 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5 py-10">
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" data-aos="fade-up">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="" data-aos="fade-up">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" data-aos="fade-up" data-aos-delay="100">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" data-aos="fade-up" data-aos-delay="200">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" data-aos="fade-up" data-aos-delay="300">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" data-aos="fade-up" data-aos-delay="400">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" data-aos="fade-up" data-aos-delay="500">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-2.png" alt="" data-aos="fade-up" data-aos-delay="200">
                 </div>
             </div>
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" data-aos="fade-up" data-aos-delay="600">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-3.png" alt="" data-aos="fade-up" data-aos-delay="300">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" data-aos="fade-up" data-aos-delay="700">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-4.png" alt="" data-aos="fade-up" data-aos-delay="400">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" data-aos="fade-up" data-aos-delay="800">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-5.png" alt="" data-aos="fade-up" data-aos-delay="500">
                 </div>
             </div>
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="" data-aos="fade-up" data-aos-delay="900">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-6.png" alt="" data-aos="fade-up" data-aos-delay="600">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" data-aos="fade-up" data-aos-delay="1000">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-7.png" alt="" data-aos="fade-up" data-aos-delay="700">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="" data-aos="fade-up" data-aos-delay="1100">
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-8.png" alt="" data-aos="fade-up" data-aos-delay="800">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-9.png" alt="" data-aos="fade-up" data-aos-delay="900">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-10.png" alt="" data-aos="fade-up" data-aos-delay="1000">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-11.png" alt="" data-aos="fade-up" data-aos-delay="1100">
                 </div>
             </div>
         </div>
@@ -490,5 +490,28 @@
     <script>
         AOS.init();
     </script>
+
+<script>
+    // Function to play and pause the video
+    const videoIframe = document.getElementById('video-iframe');
+    const videoSrc = videoIframe.src;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Play the video when in view
+                videoIframe.src = videoSrc + "?autoplay=1";
+            } else {
+                // Pause the video when out of view
+                videoIframe.src = videoSrc;
+            }
+        });
+    }, {
+        threshold: 0.5 // Adjust this value to determine how much of the section needs to be visible before playing
+    });
+
+    // Observe the section where the video is located
+    observer.observe(document.getElementById('video-section'));
+</script>
     </body>
 </html>
