@@ -55,6 +55,26 @@
                 --tw-text-opacity: 1;
                 color: rgb(79 70 229 / var(--tw-text-opacity));
             }
+            .mapouter {
+            position: relative;
+            text-align: right;
+            width: 100%; /* Mengatur lebar kontainer menjadi 100% */
+            padding-bottom: 56.25%; /* Rasio aspek 16:9 (tinggi 56.25% dari lebar) */
+            height: 0; /* Tinggi awal diatur menjadi 0 */
+            }
+            
+            .gmap_canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%; /* Mengatur lebar dan tinggi ke 100% dari kontainer */
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%; /* Mengatur tinggi iframe menjadi 100% */
+            }
         </style>
     </head>
     <body>
@@ -79,90 +99,51 @@
                                 Ubud Rafting
                             </a>
                         </div>
-
+            
                         <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-                            <a
-                                href="/"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80
-                                {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
+                            <a href="/" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
 
-                            <a
-                                href="#"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
-                                About
-                            </a>
-
-                            <a
-                                href="{{ route('service') }}"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80
-                                {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">About</a>
+                            <a href="{{ route('service') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
-
-                            <a
-                                href="#"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
-                                Gallery
-                            </a>
-                            <a
-                                href="{{ route('blog') }}"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
-                                Blog
-                            </a>
-                            <a
-                                href="{{route('contact')}}"
-                                title=""
-                                class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80
-                                {{ Request::is('contact') ? 'font-bold' : 'font-normal' }}">
-                                Contact
-                            </a>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                            <a href="{{ route('blog') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Blog</a>
+                            <a href="{{ route('contact') }}" title="" class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80 {{ Request::is('contact') ? 'font-bold' : 'font-normal'}}">
                         </div>
-
-                        <button
-                            type="button"
-                            class="inline-flex p-2 ml-1 text-white transition-all duration-200 rounded-md sm:ml-4 lg:hidden focus:bg-gray-800 hover:bg-gray-800">
-                            <!-- Menu open: "hidden", Menu closed: "block" -->
-                            <svg
-                                class="block w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewbox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"/>
-                            </svg>
-
-                            <!-- Menu open: "block", Menu closed: "hidden" -->
-                            <svg
-                                class="hidden w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewbox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12"></path>
+            
+                        <button type="button" id="menu-toggle" class="inline-flex p-2 ml-1 text-white focus:text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 ">
+                            <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
                         </button>
+                    </div>
+                </div>
+            
+                <!-- Menu Mobile -->
+                <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+
+                <div id="mobile-menu" class="lg:hidden bg-white h-screen w-1/2 fixed top-0 right-0 transition-transform transform translate-x-full duration-300 ease-in-out pt-10 z-50">
+                    <div id="close" class="item-start w-4 h-6 p-3 absolute top-0 left-0 mb-16">
+                        <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
+
+                        <a href="/" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Home</a>
+                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                        <a href="{{ route('service') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Services</a>
+                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                        <a href="{{ route('blog') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Blog</a>
+                        <a href="{{ route('contact') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Contact</a>
                     </div>
                 </div>
             </header>
 
             <section class="relative lg:min-h-[1000px] pb-14 sm:pb-20 lg:pb-28">
                 <div
-                    class="px-4 min-[300px]:top-96 min-[768px]:top-88  min-[820px]:top-68 min-[1024px]:top-60 min-[913px]:top-96 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+                    class="px-4 min-[300px]:top-96 min-[768px]:top-88  min-[820px]:top-68 min-[1024px]:top-60 min-[913px]:top-96 mx-auto max-w-7xl sm:px-6 lg:px-8 relative ">
                     <div
                         class="max-w-2xl mx-auto text-center"
                         data-aos="fade-up"
@@ -240,35 +221,14 @@
 
                     <div class="lg:col-span-3 rounded" data-aos="fade-up" data-aos-duration="800">
                         <div class="mapouter">
-                            <div class="gmap_canvas rounded">
+                            <div class="gmap_canvas">
                                 <iframe
-                                    width="783"
-                                    height="567"
                                     id="gmap_canvas"
                                     src="https://maps.google.com/maps?q=Ubud+Rafting+Jl.+Raya+Kedewatan+No.37%2C+Kedewatan%2C+Kecamatan+Ubud%2C+Kabupaten+Gianyar%2C+Bali+80571&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                     frameborder="0"
                                     scrolling="no"
                                     marginheight="0"
                                     marginwidth="0"></iframe>
-                                <a href="https://online.stopwatch-timer.net"></a><br>
-                                <a href="https://www.timertimer.net"></a><br>
-                                <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 567px;
-                                        width: 783px;
-                                    }
-                                </style>
-                                <a href="https://www.ongooglemaps.com">insert google map html</a>
-                                <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none !important;
-                                        height: 567px;
-                                        width: 783px;
-                                    }
-                                </style>
                             </div>
                         </div>
                     </div>
@@ -401,6 +361,33 @@
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenu = document.getElementById('close');
+            const overlay = document.getElementById('overlay');
+
+            // Open menu
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('translate-x-full'); // Toggle mobile menu visibility
+                overlay.classList.toggle('hidden'); // Show overlay
+            });
+
+            closeMenu.addEventListener('click', function(){
+                mobileMenu.classList.add('translate-x-full');
+                overlay.classList.add('hidden');
+            })
+
+
+
+            // Close menu when clicking outside (on the overlay)
+            overlay.addEventListener('click', function() {
+                mobileMenu.classList.add('translate-x-full'); // Hide mobile menu
+                overlay.classList.add('hidden'); // Hide overlay
+            });
+
         </script>
 
     </body>
