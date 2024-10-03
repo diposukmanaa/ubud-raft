@@ -21,6 +21,11 @@ Route::get('/blog/{id}', function ($id){
     return view('detailblog', compact('blog'));
 })->name('blog.show');
 
+
+Route::get('/contact', function (){
+    return view ('contact');
+})->name('contact');
+
 // Blog Manage
 Route::get('/blog-list', [BlogController::class, 'blogIndex'])->name('blogs.list');
 Route::get('/blog-create', [BlogController::class, 'create'])->name('blogs.create');
