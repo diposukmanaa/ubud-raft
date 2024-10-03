@@ -49,9 +49,10 @@
                             Gallery
                         </a>
                         <a
-                            href="#"
+                            href="{{ route('blog') }}"
                             title=""
-                            class="hidden text-base text-black transition-all duration-200 lg:inline-flex hover:text-opacity-80">
+                            class="hidden text-base text-black transition-all duration-200 lg:inline-flex hover:text-opacity-80
+                            {{ Request::is('/blog') ? 'font-bold' : 'font-normal' }}">
                             Blog
                         </a>
                         <a
