@@ -102,7 +102,7 @@
                                 Blog
                             </a>
                             <a
-                                href="#"
+                                href="{{ route('contact')}}"
                                 title=""
                                 class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80">
                                 Contact
