@@ -100,7 +100,7 @@
                                 href="{{ route('service') }}"
                                 title=""
                                 class="text-base text-white transition-all duration-200 hover:text-opacity-80
-                                {{ Request::is('/service') ? 'font-bold' : 'font-normal' }}">
+                                {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
 
@@ -120,7 +120,7 @@
                                 href="{{route('contact')}}"
                                 title=""
                                 class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80
-                                {{ Request::is('/contact') ? 'font-bold' : 'font-normal'}}">
+                                {{ Request::is('contact') ? 'font-bold' : 'font-normal' }}">
                                 Contact
                             </a>
                         </div>
