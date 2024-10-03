@@ -76,7 +76,7 @@
                                 href="{{ route('blog') }}"
                                 title=""
                                 class="text-base text-black transition-all duration-200 hover:text-opacity-80
-                                {{ Request::is('/blog') ? 'font-bold' : 'font-normal' }}">
+                                {{ Request::is('blog') ? 'font-bold' : 'font-normal' }}">
                                 Blog
                             </a>
                             <a
