@@ -1,3 +1,7 @@
+@php
+    use Carbon\Carbon;
+@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -11,6 +15,43 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="css/welcome-gallery.css"> -->
+        <style>
+            .swiper-button-prev:after,
+            .swiper-rtl .swiper-button-next:after {
+                content: '' !important;
+            }
+
+            .swiper-button-next:after,
+            .swiper-rtl .swiper-button-prev:after {
+                content: '' !important;
+            }
+
+            .swiper-button-next svg,
+            .swiper-button-prev svg {
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: relative !important;
+            }
+
+            .swiper-slide.swiper-slide-active {
+                --tw-border-opacity: 1 !important;
+                border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+            }
+
+            .swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+                --tw-text-opacity: 1;
+                color: rgb(79 70 229 / var(--tw-text-opacity));
+            }
+
+            .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+                --tw-text-opacity: 1;
+                color: rgb(79 70 229 / var(--tw-text-opacity));
+            }
+        </style>
     </head>
     <body>
         <div style="background-position: center; background-image: url(/images/hero2.png); background-size: cover;" class="relative h-screen">
@@ -55,9 +96,9 @@
                                 Gallery
                             </a>
                             <a
-                                href="#"
+                                href="{{ route('blog') }}"
                                 title=""
-                                class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80">
+                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
                                 Blog
                             </a>
                             <a
@@ -314,59 +355,38 @@
                 <div data-aos="fade-up" data-aos-duration="800">
                     <script src="https://widget.trustmary.com/xAdY9hDJe"></script>
                 </div>
-                <!-- <div class="grid grid-cols-2 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-2 sm:grid-cols-2">
-                    <div class="overflow-hidden bg-gray-100 rounded-md">
-                        <div class="px-5 py-6">
-                            <div class="flex items-center justify-between">
-                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-1.jpg" alt="" />
-                                <div class="min-w-0 ml-3 mr-auto">
-                                    <p class="text-base font-semibold text-black truncate">Darrell Steward</p>
-                                    <p class="text-sm text-gray-600 truncate">@darrels</p>
-                                </div>
-                                <a href="#" title="" class="inline-block text-sky-500">
-                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <blockquote class="mt-5">
-                                <p class="text-base text-gray-800">
-                                    You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.
-                                    <span class="block text-sky-500">#another</span>
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="overflow-hidden bg-gray-100 rounded-md">
-                        <div class="px-5 py-6">
-                            <div class="flex items-center justify-between">
-                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-2.jpg" alt="" />
-                                <div class="min-w-0 ml-3 mr-auto">
-                                    <p class="text-base font-semibold text-black truncate">Leslie Alexander</p>
-                                    <p class="text-sm text-gray-600 truncate">@lesslie</p>
-                                </div>
-                                <a href="#" title="" class="inline-block text-sky-500">
-                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <blockquote class="mt-5">
-                                <p class="text-base text-gray-800">
-                                    Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.
-                                    <span class="block text-sky-500">#Celebration</span>
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
+
+        <section class="py-24 bg-gray-100">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    
+                <div class="max-w-2xl mx-auto text-center mb-16">
+                    <h2 class="text-4xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our Latest Blogs</h2>
+                    <p class="mt-4 text-base leading-relaxed text-gray-600 px-10">Welcome to our blog section, where knowledge meets inspiration. Explore insightful articles, expert tips, and the latest trends in our field.</p>
+                </div>
+            
+
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2 m:grid-cols-1 gap-4">
+                    @foreach ($blogs as $blog)
+                        <div class="group w-full max-lg:max-w-xl lg:w-full border border-gray-300 rounded-2xl relative overflow-hidden">
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/blog/' . $blog->thumbnail) }}" alt="blogs tailwind section" class="rounded-t-2xl w-full object-cover" style="height: 200px">
+                            </div>
+                            <div class=" bg-white p-4 lg:p-6 transition-all duration-300 rounded-b-2xl group-hover:bg-gray-100">
+                                <h4 class="text-xl text-gray-900 font-bold leading-8 mb-2">{{ $blog->blog_title }}</h4>
+                                <span class="text-gray-400 font-medium mb-3 block">{{ $blog->author }} | {{ Carbon::parse($blog->create_date)->format('M d, Y') }}</span>
+                                <p class="text-gray-500 leading-6 mb-10 line-clamp-3">{{ $blog->content }}</p>
+                                <a href="{{ route('blog.show', $blog->id) }}" class="cursor-pointer text-lg text-green-800 font-semibold">Read more..</a>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+                <a href="{{route('blog')}}" class="bg-white mt-8 cursor-pointer border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 flex justify-center items-center text-gray-900 font-semibold mx-auto transition-all duration-300 hover:bg-gray-100">View All</a>
+            </div>
+        </section>
+
+
 
         <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -491,27 +511,65 @@
         AOS.init();
     </script>
 
-<script>
-    // Function to play and pause the video
-    const videoIframe = document.getElementById('video-iframe');
-    const videoSrc = videoIframe.src;
+    <script>
+        // Function to play and pause the video
+        const videoIframe = document.getElementById('video-iframe');
+        const videoSrc = videoIframe.src;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Play the video when in view
-                videoIframe.src = videoSrc + "?autoplay=1";
-            } else {
-                // Pause the video when out of view
-                videoIframe.src = videoSrc;
-            }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Play the video when in view
+                    videoIframe.src = videoSrc + "?autoplay=1";
+                } else {
+                    // Pause the video when out of view
+                    videoIframe.src = videoSrc;
+                }
+            });
+        }, {
+            threshold: 0.5 // Adjust this value to determine how much of the section needs to be visible before playing
         });
-    }, {
-        threshold: 0.5 // Adjust this value to determine how much of the section needs to be visible before playing
-    });
 
-    // Observe the section where the video is located
-    observer.observe(document.getElementById('video-section'));
-</script>
+        // Observe the section where the video is located
+        observer.observe(document.getElementById('video-section'));
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 28,
+            centeredSlides: false,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                },
+                568: {
+                    slidesPerView: 2,
+                    spaceBetween: 28,
+                    centeredSlides: false,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 28,
+                    centeredSlides: false,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 32,
+                },
+            },
+        });
+    </script>
     </body>
 </html>
