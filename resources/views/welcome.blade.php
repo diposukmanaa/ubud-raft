@@ -72,11 +72,11 @@
                             <a href="/" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
-                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">About</a>
+                            <a href="{{route ('about')}}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">About</a>
                             <a href="{{ route('service') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('/service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
-                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                            <a href="{{route ('gallery')}}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Gallery</a>
                             <a href="{{ route('blog') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Blog</a>
                             <a href="{{ route('contact') }}" title="" class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80 {{ Request::is('contact') ? 'font-bold' : 'font-normal'}}">
                                 Contact
@@ -101,9 +101,9 @@
                     <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
 
                         <a href="/" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Home</a>
-                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                        <a href="{{route('about')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
                         <a href="{{ route('service') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Services</a>
-                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                        <a href="{{route('gallery')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
                         <a href="{{ route('blog') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Blog</a>
                         <a href="{{ route('contact') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Contact</a>
                     </div>

@@ -26,6 +26,14 @@ Route::get('/contact', function (){
     return view ('contact');
 })->name('contact');
 
+Route::get('/gallery', function (){
+    return view ('gallery');
+})->name('gallery');
+
+Route::get('/about', function(){
+    return view ('about');
+})->name('about');
+
 // Blog Manage
 Route::get('/blog-list', [BlogController::class, 'blogIndex'])->name('blogs.list');
 Route::get('/blog-create', [BlogController::class, 'create'])->name('blogs.create');
