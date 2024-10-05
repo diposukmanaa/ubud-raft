@@ -46,11 +46,11 @@
                             <a href="/" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
-                            <a href="#" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                            <a href="{{route('about')}}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('about') ? 'font-bold' : 'font-normal' }} ">About</a>
                             <a href="{{ route('service') }}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
-                            <a href="#" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                            <a href="{{route('gallery')}}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('gallery') ? 'font-bold' : 'font-normal' }} ">Gallery</a>
                             <a href="{{ route('blog') }}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('blog') ? 'font-bold' : 'font-normal' }} ">Blog</a>
                             <a href="{{ route('contact') }}" title="" class="hidden text-base text-black transition-all duration-200 lg:inline-flex hover:text-opacity-80 {{ Request::is('contact') ? 'font-bold' : 'font-normal'}}">
                                 Contact
@@ -75,9 +75,9 @@
                     <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
     
                         <a href="/" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Home</a>
-                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                        <a href="{{ route('about')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
                         <a href="{{ route('service') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Services</a>
-                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                        <a href="{{ route ('gallery')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
                         <a href="{{ route('blog') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Blog</a>
                         <a href="{{ route('contact') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Contact</a>
                     </div>
@@ -87,7 +87,7 @@
             <section class="py-24">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     
-                    <div class="max-w-2xl mx-auto text-center mb-16">
+                    <div class="max-w-2xl mx-auto text-center mb-16" data-aos="fade-up" data-aos-duration="800">
                         <h2 class="text-4xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our Latest Blogs</h2>
                         <p class="mt-4 text-base leading-relaxed text-gray-600 px-10">Welcome to our blog section, where knowledge meets inspiration. Explore insightful articles, expert tips, and the latest trends in our field.</p>
                     </div>
@@ -95,7 +95,7 @@
 
                     <div class="grid lg:grid-cols-3 sm:grid-cols-2 m:grid-cols-1 gap-4">
                         @foreach ($blogs as $blog)
-                            <div class="group w-full max-lg:max-w-xl lg:w-full border border-gray-300 rounded-2xl relative overflow-hidden">
+                            <div class="group w-full max-lg:max-w-xl lg:w-full border border-gray-300 rounded-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                                 <div class="flex items-center">
                                     <img src="{{ asset('images/blog/' . $blog->thumbnail) }}" alt="blogs tailwind section" class="rounded-t-2xl w-full object-cover" style="height: 200px">
                                 </div>
@@ -111,6 +111,11 @@
                 </div>
             </section>                                                           
     </body>
+    <script src="js/welcome-gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -137,4 +142,5 @@
         });
 
     </script>
+
 </html>

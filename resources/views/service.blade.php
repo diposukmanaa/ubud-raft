@@ -12,10 +12,6 @@
         <link rel="stylesheet" href="css/app.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
             href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
             rel="stylesheet">
         <link
@@ -83,83 +79,45 @@
                                 Ubud Rafting
                             </a>
                         </div>
-
+            
                         <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-                            <a
-                                href="/"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80
-                                {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
+                            <a href="/" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
-
-                            <a
-                                href="#"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
-                                About
-                            </a>
-
-                            <a
-                                href="{{ route('service') }}"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80
-                                {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
+                            <a href="{{route('about')}}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('about') ? 'font-bold' : 'font-normal' }} ">About</a>
+                            <a href="{{ route('service') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
-
-                            <a
-                                href="#"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
-                                Gallery
-                            </a>
-                            <a
-                                href="{{ route('blog') }}"
-                                title=""
-                                class="text-base text-white transition-all duration-200 hover:text-opacity-80">
-                                Blog
-                            </a>
-                            <a
-                                href="{{route('contact')}}"
-                                title=""
-                                class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80
-                                {{ Request::is('contact') ? 'font-bold' : 'font-normal' }}">
+                            <a href="{{route('gallery')}}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('gallery') ? 'font-bold' : 'font-normal' }} ">Gallery</a>
+                            <a href="{{ route('blog') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('blog') ? 'font-bold' : 'font-normal' }} ">Blog</a>
+                            <a href="{{ route('contact') }}" title="" class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80 {{ Request::is('contact') ? 'font-bold' : 'font-normal'}}">
                                 Contact
                             </a>
                         </div>
-
-                        <button
-                            type="button"
-                            class="inline-flex p-2 ml-1 text-white transition-all duration-200 rounded-md sm:ml-4 lg:hidden focus:bg-gray-800 hover:bg-gray-800">
-                            <!-- Menu open: "hidden", Menu closed: "block" -->
-                            <svg
-                                class="block w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewbox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"/>
-                            </svg>
-
-                            <!-- Menu open: "block", Menu closed: "hidden" -->
-                            <svg
-                                class="hidden w-6 h-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewbox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12"></path>
+            
+                        <button type="button" id="menu-toggle" class="inline-flex p-2 ml-1 text-white focus:text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 ">
+                            <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
                         </button>
+                    </div>
+                </div>
+            
+                <!-- Menu Mobile -->
+                <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+    
+                <div id="mobile-menu" class="lg:hidden bg-white h-screen w-1/2 fixed top-0 right-0 transition-transform transform translate-x-full duration-300 ease-in-out pt-10 z-50">
+                    <div id="close" class="item-start w-4 h-6 p-3 absolute top-0 left-0 mb-16">
+                        <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
+    
+                        <a href="/" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Home</a>
+                        <a href="{{ route('about')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                        <a href="{{ route('service') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Services</a>
+                        <a href="{{ route ('gallery')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                        <a href="{{ route('blog') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Blog</a>
+                        <a href="{{ route('contact') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Contact</a>
                     </div>
                 </div>
             </header>
@@ -200,7 +158,6 @@
                             <span class="relative invisible">Our Packages!</span>
                         </a>
                     </div>
-
                 </div>
             </section>
         </div>
@@ -212,124 +169,87 @@
             <!-- Title -->
             <div class="mb-12 justify-between flex flex-col md:flex-row">
                 <h2 class="mb-8 text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16"> Our Activities </h2>
-                <p class="text-sm text-gray-500 max-w-lg"> Consectetur adipiscing elit duis tristique sollicitudin nibh. Augue mauris augue neque gravida in fermentum. Sapien pellentesque habitant morbi tristique pellentesque. </p>
+                <p class="text-sm text-gray-500 max-w-lg">We offer exciting activities designed to provide you with unforgettable experiences. With top-notch service from our professional team, enjoy fun-filled adventures in Bali with the highest level of comfort and care.</p>
             </div>
-
-        
-            <!-- Menu Mobile -->
-            <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
-
-            <div id="mobile-menu" class="lg:hidden bg-white h-screen w-1/2 fixed top-0 right-0 transition-transform transform translate-x-full duration-300 ease-in-out pt-10 z-50">
-                <div id="close" class="item-start w-4 h-6 p-3 absolute top-0 left-0 mb-16">
-                    <i class="fa-solid fa-xmark"></i>
-                    </div>
-                <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
-
-                    <a href="/" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Home</a>
-                    <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
-                    <a href="{{ route('service') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Services</a>
-                    <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
-                    <a href="{{ route('blog') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Blog</a>
-                    <a href="{{ route('contact') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Contact</a>
-                </div>
-            </div>
-        </header>
-        <section class="pt-10 overflow-hidden bg-white sm:pt-24 lg:pt-32">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Every
-                        river in Ubud has a story to tell, and we invite you to immerse yourself in it</h2>
-                    <p class="mt-4 text-base leading-relaxed text-gray-600">Explore our diverse
-                        range of rafting services and craft your unique adventure narrative today!</p>
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- FactsCard -->
-                <!-- <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full">
-                    <img
-                        src="images/DSC_0053.jpg"
-                        alt=""
-                        class="absolute inset-0 w-full h-full object-cover"/>
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                    
-                    <div class="relative z-10 flex flex-col justify-between h-full p-5 text-white">
-                        <div class="text-xl font-semibold">
-                            <h3>Ayung River</h3>
-                            <p>Rafting</p>
-                        </div>
-                        <p class="text-sm">
-                            Experience thrilling adventures with Ayung River Rafting.
-                        </p>
-                    </div>
-                </div> -->
                 <!-- Biking Tour -->
-                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full">
+                <a href="{{route('cycling')}}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="100">
                     <img
                         src="images/image-8.png"
                         alt=""
-                        class="absolute inset-0 w-full h-full object-cover"/>
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
                     <!-- Overlay -->
                     <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
                         <div class="text-xl font-semibold">
-                            <h3>Biking Tour Through Ubud</h3>
-                            <!-- <p></p> -->
+                            <h3>Cycling Tour Through Ubud</h3>
                         </div>
                         <p class="text-sm">
-                            Experience thrilling adventures with Ayung River Rafting.
+                            Explore Ubud’s breathtaking landscapes and rich culture on a scenic biking tour.
                         </p>
                     </div>
                 </div>
+                </a>
+
                 <!-- Singapadu ATV -->
-                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full">
+                <a href="#">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="200">
                     <img
                         src="images/image-1.png"
                         alt=""
-                        class="absolute inset-0 w-full h-full object-cover"/>
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
                     <!-- Overlay -->
                     <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
                         <div class="text-xl font-semibold">
                             <h3>Singapadu ATV Adventure</h3>
                         </div>
                         <p class="text-sm">
-                            Experience thrilling adventures with Ayung River Rafting.
+                            Experience the thrill of off-road adventure through Singapadu’s rugged terrain on an ATV.
                         </p>
                     </div>
                 </div>
+                </a>
+
                 <!-- FactsCard -->
-                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full">
-                    <img
-                        src="images/DSC_0053.jpg"
-                        alt=""
-                        class="absolute inset-0 w-full h-full object-cover"/>
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <a href="">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/tubbing.webp" alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
                     <!-- Overlay -->
                     <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
                         <div class="text-xl font-semibold">
                             <h3>Tubbing Adventure Activity</h3>
                         </div>
                         <p class="text-sm">
-                            Experience thrilling adventures with Ayung River Rafting.
+                            Enjoy a fun-filled tubing adventure down Bali’s serene rivers surrounded by nature.
                         </p>
                     </div>
                 </div>
+                </a>                
+
             </div>
-            <div class="mt-4 relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full">
+            <a href="{{route('rafting')}}">
+                <div class="mt-4 relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="400">
                     <img
                         src="images/DSC_0053.jpg"
                         alt=""
-                        class="absolute inset-0 w-full h-full object-cover"/>
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        style=""/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
                     
                     <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
                         <div class="text-xl font-semibold">
                             <h3>Ayung River Rafting</h3>
                         </div>
                         <p class="text-sm">
-                            Experience thrilling adventures with Ayung River Rafting.
+                            Challenge the rapids of the Ayung River on an exciting rafting journey through the jungle.
                         </p>
                     </div>
-            </div>
+                </div>
+                
+            </a>
         </div>
         </section>
 
@@ -448,11 +368,9 @@
                     </div> -->
                 </div>
 
-
                 <hr class="mt-16 mb-10 border-gray-200" />
 
                 <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Scena Project</p>
-
             </div>
         </section>
 
@@ -462,9 +380,7 @@
         <script>
             AOS.init();
         </script>
-
-    </body>
-    <script>
+        <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         const closeMenu = document.getElementById('close');
@@ -490,4 +406,6 @@
         });
 
     </script>
+
+    </body>
 </html>
