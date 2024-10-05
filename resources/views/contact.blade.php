@@ -104,12 +104,12 @@
                             <a href="/" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
-                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">About</a>
-                            <a href="{{ route('service') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('/service') ? 'font-bold' : 'font-normal' }}">
+                            <a href="{{route('about')}}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('about') ? 'font-bold' : 'font-normal' }} ">About</a>
+                            <a href="{{ route('service') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
-                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Gallery</a>
-                            <a href="{{ route('blog') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Blog</a>
+                            <a href="{{route('gallery')}}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('gallery') ? 'font-bold' : 'font-normal' }} ">Gallery</a>
+                            <a href="{{ route('blog') }}" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 {{ Request::is('blog') ? 'font-bold' : 'font-normal' }} ">Blog</a>
                             <a href="{{ route('contact') }}" title="" class="hidden text-base text-white transition-all duration-200 lg:inline-flex hover:text-opacity-80 {{ Request::is('contact') ? 'font-bold' : 'font-normal'}}">
                                 Contact
                             </a>
@@ -125,17 +125,17 @@
             
                 <!-- Menu Mobile -->
                 <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
-
+    
                 <div id="mobile-menu" class="lg:hidden bg-white h-screen w-1/2 fixed top-0 right-0 transition-transform transform translate-x-full duration-300 ease-in-out pt-10 z-50">
                     <div id="close" class="item-start w-4 h-6 p-3 absolute top-0 left-0 mb-16">
                         <i class="fa-solid fa-xmark"></i>
                         </div>
                     <div class="flex flex-col px-4 pt-2 pb-3 space-y-4 mt-10">
-
+    
                         <a href="/" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Home</a>
-                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                        <a href="{{ route('about')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
                         <a href="{{ route('service') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Services</a>
-                        <a href="#" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                        <a href="{{ route ('gallery')}}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
                         <a href="{{ route('blog') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Blog</a>
                         <a href="{{ route('contact') }}" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Contact</a>
                     </div>

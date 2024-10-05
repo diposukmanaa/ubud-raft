@@ -34,6 +34,14 @@ Route::get('/about', function(){
     return view ('about');
 })->name('about');
 
+Route::get('service-rafting', function(){
+    return view ('rafting');
+})->name('rafting');
+
+Route::get('service-cycling', function (){
+    return view ('cycling');
+})->name('cycling');
+
 // Blog Manage
 Route::get('/blog-list', [BlogController::class, 'blogIndex'])->name('blogs.list');
 Route::get('/blog-create', [BlogController::class, 'create'])->name('blogs.create');

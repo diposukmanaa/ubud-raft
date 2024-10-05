@@ -46,11 +46,11 @@
                             <a href="/" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('/') ? 'font-bold' : 'font-normal' }}">
                                 Home
                             </a>
-                            <a href="{{route('about')}}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">About</a>
+                            <a href="{{route('about')}}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('about') ? 'font-bold' : 'font-normal' }} ">About</a>
                             <a href="{{ route('service') }}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('service') ? 'font-bold' : 'font-normal' }}">
                                 Services
                             </a>
-                            <a href="{{route('gallery')}}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">Gallery</a>
+                            <a href="{{route('gallery')}}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('gallery') ? 'font-bold' : 'font-normal' }} ">Gallery</a>
                             <a href="{{ route('blog') }}" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80 {{ Request::is('blog') ? 'font-bold' : 'font-normal' }} ">Blog</a>
                             <a href="{{ route('contact') }}" title="" class="hidden text-base text-black transition-all duration-200 lg:inline-flex hover:text-opacity-80 {{ Request::is('contact') ? 'font-bold' : 'font-normal'}}">
                                 Contact
