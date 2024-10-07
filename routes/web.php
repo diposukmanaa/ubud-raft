@@ -42,6 +42,16 @@ Route::get('service-cycling', function (){
     return view ('cycling');
 })->name('cycling');
 
+Route::get('service-tubbing', function (){
+    return view ('tubbing');
+})->name('tubbing');
+
+Route::get('service-atv', function (){
+    return view ('atv');
+})->name('atv');
+
+
+
 // Blog Manage
 Route::get('/blog-list', [BlogController::class, 'blogIndex'])->name('blogs.list');
 Route::get('/blog-create', [BlogController::class, 'create'])->name('blogs.create');
