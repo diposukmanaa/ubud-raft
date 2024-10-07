@@ -132,7 +132,7 @@
 
                         <p class="text-sm text-gray-50 sm:text-lg ">Our Activity</p>
                         <h2 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
-                            style="line-height: 120%">Ubud Rafting Activities</h2>
+                            style="line-height: 120%">ATV Adventure Activities</h2>
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
                     </div>
                 </div>
