@@ -327,6 +327,79 @@
             </div>
         </section>
 
+
+        <section>
+        <!-- Container -->
+        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+            <!-- Title -->
+            <div class="mb-12 justify-between flex flex-col md:flex-row">
+                <h2 class="mb-8 text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16"> Our Activities </h2>
+                <p class="text-sm text-gray-500 max-w-lg">We offer exciting activities designed to provide you with unforgettable experiences. With top-notch service from our professional team, enjoy fun-filled adventures in Bali with the highest level of comfort and care.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Biking Tour -->
+                <a href="{{route('cycling')}}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="100">
+                    <img
+                        src="images/image-8.png"
+                        alt=""
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    <!-- Overlay -->
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Cycling Tour Through Ubud</h3>
+                        </div>
+                        <p class="text-sm">
+                            Explore Ubud’s breathtaking landscapes and rich culture on a scenic biking tour.
+                        </p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Singapadu ATV -->
+                <a href="{{ route('atv') }}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="200">
+                    <img
+                        src="images/image-1.png"
+                        alt=""
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    <!-- Overlay -->
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Singapadu ATV Adventure</h3>
+                        </div>
+                        <p class="text-sm">
+                            Experience the thrill of off-road adventure through Singapadu’s rugged terrain on an ATV.
+                        </p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- FactsCard -->
+                <a href="{{route('rafting')}}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/DSC_0053.jpg" alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    <!-- Overlay -->
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Ayung River Rafting</h3>
+                        </div>
+                        <p class="text-sm">
+                        Challenge the rapids of the Ayung River on an exciting rafting journey through the jungle.
+                        </p>
+                    </div>
+                </div>
+                </a>                
+
+            </div>
+        </div>
+        </section>
+
+
+
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5 py-10">
             <div class="grid gap-4">
                 <div>
