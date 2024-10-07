@@ -132,7 +132,7 @@
 
                         <p class="text-sm text-gray-50 sm:text-lg ">Our Activity</p>
                         <h2 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
-                            style="line-height: 120%">Ubud Rafting Activities</h2>
+                            style="line-height: 120%">Tubing Adventure Activities</h2>
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
                     </div>
                 </div>
@@ -333,7 +333,7 @@
         <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
             <!-- Title -->
             <div class="mb-12 justify-between flex flex-col md:flex-row">
-                <h2 class="mb-8 text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16"> Our Activities </h2>
+                <h2 class="mb-8 text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16">Other Activities </h2>
                 <p class="text-sm text-gray-500 max-w-lg">We offer exciting activities designed to provide you with unforgettable experiences. With top-notch service from our professional team, enjoy fun-filled adventures in Bali with the highest level of comfort and care.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
