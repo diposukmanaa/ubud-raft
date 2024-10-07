@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Ubud Rafting | Contact</title>
+        <title>Ubud Rafting | Services - Tubing</title>
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link rel="stylesheet" href="css/app.css">
@@ -64,7 +64,7 @@
                 muted="muted"
                 loop="loop"
                 class="absolute inset-0 w-full h-full object-cover">
-                <source src="{{ asset('images/contact.mp4')}}" type="video/mp4">
+                <source src="{{ asset('images/rafting.mp4')}}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="relative z-10">
@@ -130,48 +130,260 @@
                         data-aos="fade-up"
                         data-aos-duration="800">
 
-                        <h2
-                            class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
-                            style="line-height: 120%">Experience the Thrill of Ubud Rafting – Your Adventure Awaits!</h2>
+                        <p class="text-sm text-gray-50 sm:text-lg ">Our Activity</p>
+                        <h2 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
+                            style="line-height: 120%">Ubud Rafting Activities</h2>
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
-
-                        <a
-                            href="#_"
-                            class=" mt-10 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-green-600 transition duration-300 ease-out border-2 border-green-500 rounded-full shadow-md group">
-                            <span
-                                class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-green-500 group-hover:translate-x-0 ease">
-                                <svg
-                                    class="w-6 h-6"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewbox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                </svg>
-                            </span>
-                            <span
-                                class="absolute flex items-center justify-center w-full h-full text-green-500 transition-all duration-300 transform group-hover:translate-x-full ease">Our Packages!</span>
-                            <span class="relative invisible">Our Packages!</span>
-                        </a>
                     </div>
                 </div>
             </section>
         </div>
 
+        {{-- content --}}
+        <section class="py-24 bg-gray-50">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center flex-col lg:flex-row md:mt-20">
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-manrope text-4xl text-gray-900 font-bold leading-[4rem] mb-5 text-center lg:text-left" data-aos="fade-up" data-aos-duration="800">Tubing Activity</h2>
+                        <p class="text-m text-gray-500 mb-5 text-center lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">Tubing on the Ayung River, Bali’s largest and most iconic river, offers an unforgettable adventure surrounded by stunning natural beauty. As you embark on a 12-kilometer journey down the river, you'll experience the thrill of floating through its gentle currents while being immersed in the serenity of lush rainforests, majestic waterfalls, and crystal-clear waters. Along the way, you'll also have the unique opportunity to witness ancient rock carvings, a tribute to Bali's rich cultural heritage. </p>
+                        <p class="text-m text-gray-500 mb-5 text-center lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">With a tubing duration of 2.5 to 3 hours, this adventure is designed to give you ample time to soak in the breathtaking scenery and appreciate the historical significance of the rock paintings etched into the river’s cliffs. Led by a skilled and experienced river guide, your safety and enjoyment are ensured throughout the trip, making it the perfect way to enhance your Bali holiday. Whether you're seeking relaxation or simply a deeper connection with Bali’s natural beauty, Ayung River tubing promises a truly memorable experience.</p>
+                        <a class="cursor-pointer py-3 px-8 w-60 bg-green-500 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-green-700 mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="800">Booking Now</a>
+                    </div>
+                    <div class="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
+                        <div class="grid grid-cols-2 min-[450px]:grid-cols-2 md:grid-cols-3 gap-4" >
+                            <img src="{{ asset('images/image-4.png')}}" alt="Team tailwind section"
+                                class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"/>
+                            <img src="{{ asset('images/tubbing.webp')}}" alt="Team tailwind section"
+                                class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"/>
+                            <img src="{{ asset('images/image-6.png')}}" alt="Team tailwind section"
+                                class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" />
+                            <img src="{{ asset('images/image-7.png')}}" alt="Team tailwind section"
+                                class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" />
+                            <img src="{{ asset('images/image-10.png')}}" alt="Team tailwind section"
+                                class="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" />
+                            <img src="{{ asset('images/image-9.png')}}" alt="Team tailwind section"
+                                class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
 
 
+        <section class="py-10 sm:py-16 lg:py-24 bg-white">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Package Included</h2>
+                    <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">The tubing package includes safety equipment, experienced river guide, welcome drink, towel, shower facilities, and a delicious buffet lunch.</p>
+                </div>
+        
+                <div class="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Tubing</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Insurance Coverage</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="400">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fas fa-door-closed"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Locker</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="500">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fas fa-hard-hat"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Safety Equipment</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="600">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fab fa-guilded"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Instructor Tubing</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="700">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fas fa-shower"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Use of Towels & Shower Facilities</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="800">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fas fa-person-booth"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Changing Room & Toilets Facilities</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden bg-white rounded shadow" data-aos="fade-up" data-aos-delay="900">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">Food and Welcome Drink</p>
+                                    
+                                </div>
+                                <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5 py-10">
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="" data-aos="fade-up">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-2.png" alt="" data-aos="fade-up" data-aos-delay="200">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-3.png" alt="" data-aos="fade-up" data-aos-delay="300">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-4.png" alt="" data-aos="fade-up" data-aos-delay="400">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-5.png" alt="" data-aos="fade-up" data-aos-delay="500">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-6.png" alt="" data-aos="fade-up" data-aos-delay="600">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-7.png" alt="" data-aos="fade-up" data-aos-delay="700">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-8.png" alt="" data-aos="fade-up" data-aos-delay="800">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-9.png" alt="" data-aos="fade-up" data-aos-delay="900">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-10.png" alt="" data-aos="fade-up" data-aos-delay="1000">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="images/image-11.png" alt="" data-aos="fade-up" data-aos-delay="1100">
+                </div>
+            </div>
+        </div>
+        
+
+        
 
         {{-- footer --}}
-
         <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                        <img class="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+                        <!-- <img class="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" /> -->
+                         <h2 class="text-3xl font-bold leading-tight text-gray-900 sm">Ubud Rafting</h2>
 
                         <p class="text-base leading-relaxed text-gray-600 mt-7">The Longer Journey, better story with Ubud Rafting.</p>
 
@@ -225,49 +437,54 @@
 
                         <ul class="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
+                                <a href="{{route('about')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Features </a>
-                            </li>
-
-                            <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Works </a>
-                            </li>
-
-                            <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Career </a>
+                                <a href="{{route('contact')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Contact </a>
                             </li>
                         </ul>
                     </div>
 
                     <div>
-                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Help</p>
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Services</p>
 
                         <ul class="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Customer Support </a>
+                                <a href="{{route('rafting')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Rafting </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Delivery Details </a>
+                                <a href="{{route('cycling')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Cycling </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Terms & Conditions </a>
+                                <a href="{{route('tubbing')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Tubing </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Privacy Policy </a>
+                                <a href="{{route('atv')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> ATV </a>
                             </li>
                         </ul>
                     </div>
+
+                    <!-- <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Subscribe to newsletter</p>
+
+                        <form action="#" method="POST" class="mt-6">
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                            </div>
+
+                            <button type="submit" class="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+                        </form>
+                    </div> -->
                 </div>
 
                 <hr class="mt-16 mb-10 border-gray-200" />
 
-                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Scena Project</p>
+                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by <span><a href="https://instagram.com/scena.project" class="font-bold text-blue-600 hover:underline">Scena Project</a></span> </p>
             </div>
         </section>
 

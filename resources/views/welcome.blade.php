@@ -221,9 +221,11 @@
             </div>
         </div>
 
-        <section class="py-10 bg-white sm:py-16 lg:py-24">
-            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                <div class="max-w-2xl mx-auto text-center"> 
+        <section>
+        <!-- Container -->
+        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+            <!-- Title -->
+            <div class="max-w-2xl mx-auto text-center pb-16"> 
                     <h2 class="text-3xl pb-5 font-bold leading-tight text-black sm:text-4xl lg:text-5xl"  data-aos="fade-up" data-aos-duration="800">
                         Unleash the Ultimate Adventure in Ubud
                     </h2>
@@ -234,81 +236,86 @@
                         organization.
                     </p>
                 </div>
-
-                <div class="grid max-w-md grid-cols-1 gap-3 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full lg:gap-8"  data-aos="fade-up" data-aos-duration="800">
-                    <!-- Card 1 -->
-                    <div class="relative flex flex-col overflow-hidden bg-white shadow-md rounded-xl">
-                        <div class="relative">
-                            <img class="w-full h-64 object-fill" src="images/hero.png" alt="Ayung River Rafting">
-                            <span class="absolute top-4 left-4 text-xs font-semibold tracking-widest text-white uppercase bg-orange-500 bg-opacity-75 px-2 py-1 rounded">
-                                Ayung River Rafting
-                            </span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Biking Tour -->
+                <a href="{{route('cycling')}}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="100">
+                    <img
+                        src="images/image-8.png"
+                        alt=""
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    <!-- Overlay -->
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Cycling Tour Through Ubud</h3>
                         </div>
-                        <div class="border-t border-gray-200">
-                            <div class="flex">
-                                <div class="flex items-center flex-1 px-6 py-5">
-                                    <div class="flex-1 mt-1">
-                                        <p class="text-2xl font-semibold">
-                                            <a href="#" class="text-black">Experience the Thrill of Ayung River Rafting</a>
-                                        </p>
-                                        <p class="mt-4 text-base text-gray-600">
-                                            Discover the excitement of rafting on Bali's longest and most scenic river – the Ayung River. Embark on an unforgettable adventure through lush rainforests, breathtaking waterfalls, and stunning landscapes.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="text-sm">
+                            Explore Ubud’s breathtaking landscapes and rich culture on a scenic biking tour.
+                        </p>
                     </div>
-                    
-                    <div class="relative flex flex-col overflow-hidden bg-white shadow-md rounded-xl">
-                        <div class="relative">
-                            <img class="w-full h-64 object-cover" src="images/DSC_0053.jpg" alt="Ayung River Rafting">
-                            <span class="absolute top-4 left-4 text-xs font-semibold tracking-widest text-white uppercase bg-orange-500 bg-opacity-75 px-2 py-1 rounded">
-                                Biking Tour Through Ubud
-                            </span>
-                        </div>
-                        <div class="border-t border-gray-200">
-                            <div class="flex">
-                                <div class="flex items-center flex-1 px-6 py-5">
-                                    <div class="flex-1 mt-1">
-                                        <p class="text-2xl font-semibold">
-                                            <a href="#" class="text-black">Explore Ubud on an Exciting Biking Tour</a>
-                                        </p>
-                                        <p class="mt-4 text-base text-gray-600">
-                                            Pedal through the heart of Bali on a biking tour that takes you deep into the cultural and natural wonders of Ubud. Ride along scenic paths through lush rice terraces, traditional Balinese villages, and hidden temples.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 (Duplicate of Card 1) -->
-                    <div class="relative flex flex-col overflow-hidden bg-white shadow-md rounded-xl">
-                        <div class="relative">
-                            <img class="w-full h-64 object-cover" src="images/DSC03416.jpg" alt="Ayung River Rafting">
-                            <span class="absolute top-4 left-4 text-xs font-semibold tracking-widest text-white uppercase bg-orange-500 bg-opacity-75 px-2 py-1 rounded">
-                                Singapadu ATV Adventure
-                            </span>
-                        </div>
-                        <div class="border-t border-gray-200">
-                            <div class="flex">
-                                <div class="flex items-center flex-1 px-6 py-5">
-                                    <div class="flex-1 mt-1">
-                                        <p class="text-2xl font-semibold">
-                                            <a href="#" class="text-black">Unleash Your Thrill on the Singapadu ATV Adventure</a>
-                                        </p>
-                                        <p class="mt-4 text-base text-gray-600">
-                                            Get ready for an exhilarating ride through Bali's rugged terrain on the Singapadu ATV Adventure. Experience the thrill of driving an ATV through dense jungles, winding trails, muddy paths, and picturesque rice fields.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+                </a>
+
+                <!-- Singapadu ATV -->
+                <a href="{{ route('atv') }}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="200">
+                    <img
+                        src="images/image-1.png"
+                        alt=""
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    <!-- Overlay -->
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Singapadu ATV Adventure</h3>
+                        </div>
+                        <p class="text-sm">
+                            Experience the thrill of off-road adventure through Singapadu’s rugged terrain on an ATV.
+                        </p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- FactsCard -->
+                <a href="{{route('tubbing')}}">
+                <div class="relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/tubbing.webp" alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    <!-- Overlay -->
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Tubbing Adventure Activity</h3>
+                        </div>
+                        <p class="text-sm">
+                            Enjoy a fun-filled tubing adventure down Bali’s serene rivers surrounded by nature.
+                        </p>
+                    </div>
+                </div>
+                </a>                
+
             </div>
+            <a href="{{route('rafting')}}">
+                <div class="mt-4 relative bg-gray-100 rounded-lg overflow-hidden h-80 w-full group" data-aos="fade-up" data-aos-delay="400">
+                    <img
+                        src="images/DSC_0053.jpg"
+                        alt=""
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        style=""/>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+                    
+                    <div class="relative z-10 flex flex-col justify-end h-full p-8 text-white">
+                        <div class="text-xl font-semibold">
+                            <h3>Ayung River Rafting</h3>
+                        </div>
+                        <p class="text-sm">
+                            Challenge the rapids of the Ayung River on an exciting rafting journey through the jungle.
+                        </p>
+                    </div>
+                </div>
+                
+            </a>
+        </div>
         </section>
 
         <section class="py-10 bg-white-100 sm:py-16 lg:py-24">
@@ -357,7 +364,8 @@
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                        <img class="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+                        <!-- <img class="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" /> -->
+                         <h2 class="text-3xl font-bold leading-tight text-gray-900 sm">Ubud Rafting</h2>
 
                         <p class="text-base leading-relaxed text-gray-600 mt-7">The Longer Journey, better story with Ubud Rafting.</p>
 
@@ -411,41 +419,33 @@
 
                         <ul class="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
+                                <a href="{{route('about')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Features </a>
-                            </li>
-
-                            <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Works </a>
-                            </li>
-
-                            <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Career </a>
+                                <a href="{{route('contact')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Contact </a>
                             </li>
                         </ul>
                     </div>
 
                     <div>
-                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Help</p>
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Services</p>
 
                         <ul class="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Customer Support </a>
+                                <a href="{{route('rafting')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Rafting </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Delivery Details </a>
+                                <a href="{{route('cycling')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Cycling </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Terms & Conditions </a>
+                                <a href="{{route('tubbing')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Tubing </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Privacy Policy </a>
+                                <a href="{{route('atv')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> ATV </a>
                             </li>
                         </ul>
                     </div>
@@ -466,7 +466,7 @@
 
                 <hr class="mt-16 mb-10 border-gray-200" />
 
-                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Scena Project</p>
+                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by <span><a href="https://instagram.com/scena.project" class="font-bold text-blue-600 hover:underline">Scena Project</a></span> </p>
             </div>
         </section>
     

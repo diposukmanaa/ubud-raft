@@ -137,7 +137,7 @@
         </section> 
 
 
-        <section class="py-10 bg-gray-50 sm:py-16 lg:py-24 bg-white">
+        <section class="py-10 sm:py-16 lg:py-24 bg-white">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Package Included</h2>
@@ -332,7 +332,8 @@
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                        <img class="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+                        <!-- <img class="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" /> -->
+                         <h2 class="text-3xl font-bold leading-tight text-gray-900 sm">Ubud Rafting</h2>
 
                         <p class="text-base leading-relaxed text-gray-600 mt-7">The Longer Journey, better story with Ubud Rafting.</p>
 
@@ -386,49 +387,54 @@
 
                         <ul class="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
+                                <a href="{{route('about')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Features </a>
-                            </li>
-
-                            <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Works </a>
-                            </li>
-
-                            <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Career </a>
+                                <a href="{{route('contact')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Contact </a>
                             </li>
                         </ul>
                     </div>
 
                     <div>
-                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Help</p>
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Services</p>
 
                         <ul class="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Customer Support </a>
+                                <a href="{{route('rafting')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Rafting </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Delivery Details </a>
+                                <a href="{{route('cycling')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Cycling </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Terms & Conditions </a>
+                                <a href="{{route('tubbing')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Tubing </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Privacy Policy </a>
+                                <a href="{{route('atv')}}" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> ATV </a>
                             </li>
                         </ul>
                     </div>
+
+                    <!-- <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Subscribe to newsletter</p>
+
+                        <form action="#" method="POST" class="mt-6">
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                            </div>
+
+                            <button type="submit" class="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+                        </form>
+                    </div> -->
                 </div>
 
                 <hr class="mt-16 mb-10 border-gray-200" />
 
-                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Scena Project</p>
+                <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by <span><a href="https://instagram.com/scena.project" class="font-bold text-blue-600 hover:underline">Scena Project</a></span> </p>
             </div>
         </section>
 
