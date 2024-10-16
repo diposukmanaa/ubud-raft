@@ -64,13 +64,13 @@
                 muted="muted"
                 loop="loop"
                 class="absolute inset-0 w-full h-full object-cover">
-                <source src="{{ asset('images/rafting.mp4')}}" type="video/mp4">
+                <source src="{{ asset('images/Tubing.mp4')}}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="relative z-10">
                 <!-- Your content here -->
             </div>
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-black opacity-70"></div>
             <header class="absolute inset-x-0 top-0 z-10 w-full">
                 <div class="px-4 mx-auto sm:px-6 lg:px-8">
                     <div class="flex items-center justify-between h-16 lg:h-20">
@@ -131,8 +131,8 @@
                         data-aos-duration="800">
 
                         <p class="text-sm text-gray-50 sm:text-lg ">Our Activity</p>
-                        <h2 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
-                            style="line-height: 120%">Tubing Adventure Activities</h2>
+                        <h1 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
+                            style="line-height: 120%">Tubing Adventure Activities</h1>
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
                     </div>
                 </div>
@@ -140,29 +140,29 @@
         </div>
 
         {{-- content --}}
-        <section class="py-24 bg-gray-50">
+        <section class="py-10 bg-gray-50">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center flex-col lg:flex-row md:mt-20">
                     <div class="w-full lg:w-1/2">
                         <h2
                             class="font-manrope text-4xl text-gray-900 font-bold leading-[4rem] mb-5 text-center lg:text-left" data-aos="fade-up" data-aos-duration="800">Tubing Activity</h2>
-                        <p class="text-m text-gray-500 mb-5 text-center lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">Tubing on the Ayung River, Bali’s largest and most iconic river, offers an unforgettable adventure surrounded by stunning natural beauty. As you embark on a 12-kilometer journey down the river, you'll experience the thrill of floating through its gentle currents while being immersed in the serenity of lush rainforests, majestic waterfalls, and crystal-clear waters. Along the way, you'll also have the unique opportunity to witness ancient rock carvings, a tribute to Bali's rich cultural heritage. </p>
-                        <p class="text-m text-gray-500 mb-5 text-center lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">With a tubing duration of 2.5 to 3 hours, this adventure is designed to give you ample time to soak in the breathtaking scenery and appreciate the historical significance of the rock paintings etched into the river’s cliffs. Led by a skilled and experienced river guide, your safety and enjoyment are ensured throughout the trip, making it the perfect way to enhance your Bali holiday. Whether you're seeking relaxation or simply a deeper connection with Bali’s natural beauty, Ayung River tubing promises a truly memorable experience.</p>
+                        <p class="text-m text-gray-500 mb-5 text-justify lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">Adventure tubing might be one of the best answers for you. Bali fun Tubing is a new entertainment provider providing a complete Bali river tubing trip for you new experience in Bali. Tubing activities will help you to unwind for a moment from the hustle and bustle of the city with its beautiful nature.</p>
+                        <p class="text-m text-gray-500 mb-5 text-justify lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">Enjoy an exciting Adventure Tubing experience lasting approximately 1.5 to 2 hours. You'll pass by three stunning waterfalls, adding to the thrill of navigating the river. This tubing activity is the perfect way to unwind from the hustle and bustle of the city while immersing yourself in the tranquil beauty of Bali's nature.</p>
                         <a class="cursor-pointer py-3 px-8 w-60 bg-green-500 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-green-700 mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="800">Booking Now</a>
                     </div>
                     <div class="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
                         <div class="grid grid-cols-2 min-[450px]:grid-cols-2 md:grid-cols-3 gap-4" >
-                            <img src="{{ asset('images/image-4.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/tubing-1.jpg')}}" alt="tubing"
                                 class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"/>
-                            <img src="{{ asset('images/tubbing.webp')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/tubing-2.jpg')}}" alt="tubing activity"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"/>
-                            <img src="{{ asset('images/image-6.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/tubing-3.jpg')}}" alt="tubing adventure"
                                 class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" />
-                            <img src="{{ asset('images/image-7.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/tubing-4.jpg')}}" alt="tubing river"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" />
-                            <img src="{{ asset('images/image-10.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/tubing-5.jpg')}}" alt="tubing in bali"
                                 class="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" />
-                            <img src="{{ asset('images/image-9.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/tubing-6.jpg')}}" alt="tubing in ubud"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" />
                         </div>
                     </div>
@@ -327,6 +327,69 @@
             </div>
         </section>
 
+        <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Additional Information</h3>
+                    <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">We ensure you can enjoy your trip, check out some of the following information for your convenience.</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-2">
+        
+                <ul class="max-w-md mx-auto space-y-12">
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
+        
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-bone"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Not recommended for travelers with spinal injuries</h3>
+                            
+                        </div>
+                    </li>
+        
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class=" sm:hidden -ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
+        
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-person-dress"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Not recommended for pregnant travelers</h3>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="mt-4 sm:mt-0 lg:mt-0 xl:mt-0 max-w-md mx-auto space-y-12">
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
+        
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Not recommended for travelers with poor cardiovascular health</h3>
+                            
+                        </div>
+                    </li>
+        
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Travelers should have at least a moderate level of physical fitness</h3>
+                            
+                        </div>
+                    </li>
+                </ul>
+                </div>
+
+
+            </div>
+        </section>
+
 
         <section>
         <!-- Container -->
@@ -397,58 +460,6 @@
             </div>
         </div>
         </section>
-
-
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5 py-10">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="" data-aos="fade-up">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-2.png" alt="" data-aos="fade-up" data-aos-delay="200">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-3.png" alt="" data-aos="fade-up" data-aos-delay="300">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-4.png" alt="" data-aos="fade-up" data-aos-delay="400">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-5.png" alt="" data-aos="fade-up" data-aos-delay="500">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-6.png" alt="" data-aos="fade-up" data-aos-delay="600">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-7.png" alt="" data-aos="fade-up" data-aos-delay="700">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-8.png" alt="" data-aos="fade-up" data-aos-delay="800">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-9.png" alt="" data-aos="fade-up" data-aos-delay="900">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-10.png" alt="" data-aos="fade-up" data-aos-delay="1000">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-11.png" alt="" data-aos="fade-up" data-aos-delay="1100">
-                </div>
-            </div>
-        </div>
-        
-
-        
 
         {{-- footer --}}
         <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">

@@ -103,29 +103,30 @@
         </div>
 
         {{-- content --}}
-        <section class="py-24 bg-gray-50">
+        <section class="py-10 bg-gray-50">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center flex-col lg:flex-row md:mt-20">
                     <div class="w-full lg:w-1/2">
                         <h2
                             class="font-manrope text-4xl text-gray-900 font-bold leading-[4rem] mb-5 text-center lg:text-left" data-aos="fade-up" data-aos-duration="800">Rafting Activity</h2>
-                        <p class="text-m text-gray-500 mb-5 text-center lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">Rafting on the Ayung River, Bali’s largest and most iconic river, offers an unforgettable adventure surrounded by stunning natural beauty. As you embark on a 12-kilometer journey down the river, you'll experience the thrill of navigating through its exciting rapids while being immersed in the serenity of lush rainforests, majestic waterfalls, and crystal-clear waters. Along the way, you'll also have the unique opportunity to witness ancient rock carvings, a tribute to Bali's rich cultural heritage. </p>
-                        <p class="text-m text-gray-500 mb-5 text-center lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">With a rafting duration of 2.5 to 3 hours, this adventure is designed to give you ample time to soak in the breathtaking scenery and appreciate the historical significance of the rock paintings etched into the river’s cliffs. Led by a skilled and experienced river guide, your safety and enjoyment are ensured throughout the trip, making it the perfect way to enhance your Bali holiday. Whether you're seeking excitement or simply a deeper connection with Bali’s natural beauty, Ayung River rafting promises a truly memorable experience.</p>
+                        <p class="text-m text-gray-500 mb-5 text-justify lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">Rafting on the Ayung River, Bali’s largest and most iconic river, offers an unforgettable adventure surrounded by stunning natural beauty. As you embark on a 12-kilometer journey down the river, You'll experience the thrill of wading through its exciting rapids while being immersed in the serenity of lush rainforests, majestic waterfalls and fresh mountain river water. Along the way, you'll also have the unique opportunity to witness ancient rock carvings, a tribute to Bali's rich cultural heritage. </p>
+                        <p class="text-m text-gray-500 mb-5 text-justify lg:text-justify w-full lg:w-2/3" data-aos="fade-up" data-aos-duration="800">With a rafting duration of 2.5 to 3 hours, this adventure is designed to give you ample time to soak in the breathtaking scenery and appreciate the historical significance of the rock paintings etched into the river’s cliffs. Led by a skilled and experienced river guide, your safety and enjoyment are ensured throughout the trip, making it the perfect way to enhance your Bali 
+                            holiday. </p>
                         <a class="cursor-pointer py-3 px-8 w-60 bg-green-500 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-green-700 mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="800">Booking Now</a>
                     </div>
                     <div class="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
                         <div class="grid grid-cols-2 min-[450px]:grid-cols-2 md:grid-cols-3 gap-4" >
-                            <img src="{{ asset('images/image-4.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/image-4.png')}}" alt="Rafting in Ubud - Rafting di ubud "
                                 class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"/>
-                            <img src="{{ asset('images/image-5.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/image-5.png')}}" alt="Rafting adventure - Kegiatan Rafting "
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"/>
-                            <img src="{{ asset('images/image-6.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/image-6.png')}}" alt="Rafting di bali - Rafting in Bali"
                                 class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" />
-                            <img src="{{ asset('images/image-7.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/image-7.png')}}" alt="Rafting activity"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" />
-                            <img src="{{ asset('images/image-10.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/image-10.png')}}" alt="Rafting ubud"
                                 class="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" />
-                            <img src="{{ asset('images/image-9.png')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/image-9.png')}}" alt="Ubud Rafting"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" />
                         </div>
                     </div>
@@ -137,7 +138,7 @@
         <section class="py-10 sm:py-16 lg:py-24 bg-white">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Package Included</h2>
+                    <h1 class="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Package Included</h1>
                     <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">The rafting package includes safety equipment, experienced river guide, welcome drink, towel, shower facilities, and a delicious buffet lunch.</p>
                 </div>
         
@@ -309,6 +310,69 @@
             </div>
         </section>
 
+        <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Additional Information</h3>
+                    <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">We ensure you can enjoy your trip, check out some of the following information for your convenience.</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-2">
+        
+                <ul class="max-w-md mx-auto space-y-12">
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
+        
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-bone"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Not recommended for travelers with spinal injuries</h3>
+                            
+                        </div>
+                    </li>
+        
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class=" sm:hidden -ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
+        
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-person-dress"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Not recommended for pregnant travelers</h3>
+                            
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="mt-4 sm:mt-0 lg:mt-0 xl:mt-0 max-w-md mx-auto space-y-12">
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
+        
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Not recommended for travelers with poor cardiovascular health</h3>
+                            
+                        </div>
+                    </li>
+        
+                    <li class="relative flex items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <div class="ml-8">
+                            <h3 class="text-lg font-semibold text-black">Travelers should have at least a moderate level of physical fitness</h3>
+                            
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </section>
+
         <section>
         <!-- Container -->
         <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
@@ -379,57 +443,6 @@
 
         </div>
         </section>
-
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5 py-10">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="" data-aos="fade-up">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-2.png" alt="" data-aos="fade-up" data-aos-delay="200">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-3.png" alt="" data-aos="fade-up" data-aos-delay="300">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-4.png" alt="" data-aos="fade-up" data-aos-delay="400">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-5.png" alt="" data-aos="fade-up" data-aos-delay="500">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-6.png" alt="" data-aos="fade-up" data-aos-delay="600">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-7.png" alt="" data-aos="fade-up" data-aos-delay="700">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-8.png" alt="" data-aos="fade-up" data-aos-delay="800">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-9.png" alt="" data-aos="fade-up" data-aos-delay="900">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-10.png" alt="" data-aos="fade-up" data-aos-delay="1000">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-11.png" alt="" data-aos="fade-up" data-aos-delay="1100">
-                </div>
-            </div>
-        </div>
-        
-
-        
 
         {{-- footer --}}
         <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
@@ -521,19 +534,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <!-- <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
-                        <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Subscribe to newsletter</p>
-
-                        <form action="#" method="POST" class="mt-6">
-                            <div>
-                                <label for="email" class="sr-only">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Enter your email" class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
-                            </div>
-
-                            <button type="submit" class="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
-                        </form>
-                    </div> -->
                 </div>
 
                 <hr class="mt-16 mb-10 border-gray-200" />
