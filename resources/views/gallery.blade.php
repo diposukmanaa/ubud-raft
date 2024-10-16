@@ -66,7 +66,7 @@
                 muted="muted"
                 loop="loop"
                 class="absolute inset-0 w-full h-full object-cover">
-                <source src="{{ asset('images/ubud-Rafting.mp4')}}" type="video/mp4" >
+                <source src="{{ asset('images/ubudrafting.mp4')}}" type="video/mp4" >
                 Your browser does not support the video tag.
             </video>
             <div class="relative z-10">
@@ -168,12 +168,12 @@
             <div class="grid gap-4">
                 <div>
                     <a href="images/image.png" data-fancybox="gallery">
-                        <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="" data-aos="fade-up">
+                        <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="rafting activity" data-aos="fade-up">
                     </a>
                 </div>
                 <div>
                     <a href="images/image-1.png" data-fancybox="gallery">
-                        <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
+                        <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="atv adventure" data-aos="fade-up" data-aos-delay="100">
                     </a>
                 </div>
                 <div>

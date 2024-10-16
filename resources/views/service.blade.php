@@ -136,7 +136,7 @@
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
 
                         <a
-                            href="#_"
+                            href="#package"
                             class=" mt-10 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-green-600 transition duration-300 ease-out border-2 border-green-500 rounded-full shadow-md group">
                             <span
                                 class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-green-500 group-hover:translate-x-0 ease">
@@ -251,6 +251,249 @@
                 
             </a>
         </div>
+        </section>
+
+        <section id="package" class="py-4 sm:py-16 lg:py-24 bg-white">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="max-w-2xl mx-auto text-center" data-aos="fade-up"
+                    data-aos-duration="800">
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our Activity Package</h2>
+                    <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">We offer a wide range of services bundled into attractive packages, designed to enhance your holiday experience.</p>
+                </div>
+                
+                <div
+                    class="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-2">
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                        class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div
+                                    class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">RAFTING + ATV SINGLE</p>
+
+                                </div>
+                                <svg
+                                    class="hidden w-5 h-5 text-blue-600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                        class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                        data-aos="fade-up"
+                        data-aos-delay="500">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div
+                                    class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">RAFTING + ATV TANDEM</p>
+
+                                </div>
+                                <svg
+                                    class="hidden w-5 h-5 text-blue-600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                        class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                        data-aos="fade-up"
+                        data-aos-delay="600">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div
+                                    class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">RAFTING + CYCLING</p>
+
+                                </div>
+                                <svg
+                                    class="hidden w-5 h-5 text-blue-600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                        class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                        data-aos="fade-up"
+                        data-aos-delay="700">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div
+                                    class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-motorcycle"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">ATV SINGLE + TUBBING SINGLE</p>
+
+                                </div>
+                                <svg
+                                    class="hidden w-5 h-5 text-blue-600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                        class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                        data-aos="fade-up"
+                        data-aos-delay="900">
+                        <div class="p-8">
+                            <div class="flex items-center">
+                                <div
+                                    class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                    <i class="fa-solid fa-motorcycle"></i>
+                                </div>
+                                <div class="ml-5 mr-auto">
+                                    <p class="text-xl font-semibold text-black">ATV TANDEM + TUBBING SINGLE</p>
+
+                                </div>
+                                <svg
+                                    class="hidden w-5 h-5 text-blue-600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                    class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                    data-aos="fade-up"
+                    data-aos-delay="900">
+                    <div class="p-8">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                <i class="fa-solid fa-motorcycle"></i>
+                            </div>
+                            <div class="ml-5 mr-auto">
+                                <p class="text-xl font-semibold text-black">ATV SINGLE + TUBBING TANDEM</p>
+
+                            </div>
+                            <svg
+                                class="hidden w-5 h-5 text-blue-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://wa.me/6287861803700">
+                    <div
+                    class="overflow-hidden bg-white rounded shadow border hover:bg-green-200"
+                    data-aos="fade-up"
+                    data-aos-delay="900">
+                    <div class="p-8">
+                        <div class="flex items-center">
+                            <div
+                            class="flex items-center justify-center w-12 h-12 text-black  bg-green-100 rounded-full">
+                                <i class="fa-solid fa-motorcycle"></i>
+                            </div>
+                            <div class="ml-5 mr-auto text-center">
+                                <p class="text-xl text-center font-semibold text-black">ATV TANDEM + TUBBING TANDEM</p>
+                            </div>
+                            <svg
+                                class="hidden w-5 h-5 text-blue-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </div>
+                        </div>
+                    </div>
+                    </a>
+
+                </div>
+            </div>
         </section>
 
 

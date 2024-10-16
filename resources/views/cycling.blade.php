@@ -94,8 +94,8 @@
                         data-aos-duration="800">
 
                         <p class="text-sm text-gray-50 sm:text-lg ">Our Activity</p>
-                        <h2 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
-                            style="line-height: 120%">Cycling Tour Activity</h2>
+                        <h1 class="text-3xl text-white font-bold xl:text-5xl lg:text-4xl sm:text-3xl m:text-2xl "
+                            style="line-height: 120%">Cycling Tour Activity</h1>
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
                     </div>
                 </div>
@@ -118,17 +118,17 @@
                     </div>
                     <div class="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
                         <div class="grid grid-cols-2 min-[450px]:grid-cols-2 md:grid-cols-3 gap-4" >
-                            <img src="{{ asset('images/bike-1.jpg')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/bike-1.jpg')}}" alt="cycling in bali"
                                 class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"/>
-                            <img src="{{ asset('images/bike-2.webp')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/bike-2.webp')}}" alt="cycling ubud rice field"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"/>
-                            <img src="{{ asset('images/bike-3.jpg')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/bike-3.jpg')}}" alt="cycling adventure in ubud"
                                 class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" />
-                            <img src="{{ asset('images/bike-4.jpeg')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/bike-4.jpeg')}}" alt="cycling in ubud"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" />
-                            <img src="{{ asset('images/bike-5.jpg')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/bike-5.jpg')}}" alt="morning cycling in ubud"
                                 class="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" />
-                            <img src="{{ asset('images/bike-6.jpg')}}" alt="Team tailwind section"
+                            <img src="{{ asset('images/bike-6.jpg')}}" alt="morning cycling around ubud village"
                                 class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" />
                         </div>
                     </div>
@@ -349,55 +349,6 @@
         </div>
         </section>
 
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-5 py-10">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image.png" alt="" data-aos="fade-up">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-2.png" alt="" data-aos="fade-up" data-aos-delay="200">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-3.png" alt="" data-aos="fade-up" data-aos-delay="300">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-4.png" alt="" data-aos="fade-up" data-aos-delay="400">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-5.png" alt="" data-aos="fade-up" data-aos-delay="500">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-6.png" alt="" data-aos="fade-up" data-aos-delay="600">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-7.png" alt="" data-aos="fade-up" data-aos-delay="700">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-8.png" alt="" data-aos="fade-up" data-aos-delay="800">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-9.png" alt="" data-aos="fade-up" data-aos-delay="900">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-10.png" alt="" data-aos="fade-up" data-aos-delay="1000">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="images/image-11.png" alt="" data-aos="fade-up" data-aos-delay="1100">
-                </div>
-            </div>
-        </div>
-        
-        
 
         <!-- footer -->
         <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
