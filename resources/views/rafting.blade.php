@@ -13,13 +13,30 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+            .swiper-wrapper {
+            width: 100%;
+            height: max-content !important;
+            padding-bottom: 64px !important;
+            -webkit-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+            position: relative;
+            }
+            .swiper-pagination-bullet {
+            background: #5ce367;
+            }
+            .swiper-pagination-bullet-active {
+            background: #4bcc00 !important;
+            }
         </style>
         
-
     </head>
+
     <body>
         <div class="relative h-screen">
             <video
@@ -134,6 +151,168 @@
             </div>
         </section> 
 
+        <section class="py-10 sm:py-16 lg:py-4 mt-10 bg-white">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl rounded-2xl">
+                <div class="mx-auto text-left" data-aos="fade-up" data-aos-duration="800">
+                    <h1 class="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl mb-10">Activity Flows</h1>
+                </div>
+
+                <div class="items-center relative mb-8" data-aos="fade-up" data-aos-duration="800">
+                    <div class="swiper centered-slide-carousel swiper-container relative">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-1.jpg');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4 inset-3" style="top: 80%"> 
+                                            <h3 class="text-2xl text-white font-bold">1 | Registration</h3>
+                                            <p class="text-gray-300">Confirm your data based on your booking information.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-2.jpg');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">2 | Equipment Setup</h3>
+                                            <p class="text-gray-300">Wait instruction from instructor while using equipment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-3.jpg');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">3 | Go to Start Point</h3>
+                                            <p class="text-gray-300">Go to the starting point with a special car.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-9.png');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">4 | Steps Into River</h3>
+                                            <p class="text-gray-300">Gently descending the steps to the river's edge.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/image-6.png');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">5 | Start Rafting Adventure</h3>
+                                            <p class="text-gray-300">Embark on a 12-kilometer journey down the river.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-6.png');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">6 | Relief River Journey</h3>
+                                            <p class="text-gray-300">Embark cultural relief along river journey. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-7.jpg');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">7 | End Rafting Activity</h3>
+                                            <p class="text-gray-300">Ending of rafting activity and prepare go back to restaurant.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="bg-indigo-50 rounded-2xl" style="height: 450px">
+                                    <div class="relative rounded-2xl" style="
+                                        width: 100%;
+                                        height: 100%;
+                                        background-image: url('images/tips-8.png');
+                                        background-size: cover;
+                                        background-position: center;">
+                                        
+                                        <div class="absolute inset-0 opacity-85 bg-gradient-to-t from-black to-transparent rounded-2xl"></div>
+                                        <div class="absolute px-4  inset-3" style="top: 80%" >
+                                            <h3 class="text-2xl text-white font-bold">8 | Lunch in Restaurant</h3>
+                                            <p class="text-gray-300">Enjoy a delightful lunch in a cozy restaurant.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            </div>
+                                <div class="swiper-pagination "></div>
+                            </div>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
 
         <section class="py-10 sm:py-16 lg:py-24 bg-white">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -151,7 +330,6 @@
                                 </div>
                                 <div class="ml-5 mr-auto">
                                     <p class="text-xl font-semibold text-black">Rafting</p>
-                                    
                                 </div>
                                 <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -302,13 +480,12 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                 </svg>
                             </div>
-                            
                         </div>
                     </div>
-        
                 </div>
             </div>
         </section>
+       
 
         <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -573,6 +750,38 @@
             overlay.classList.add('hidden'); // Hide overlay
         });
 
+        </script>
+
+        <script>
+            var swiper = new Swiper(".centered-slide-carousel", {
+                    centeredSlides: true,
+                    paginationClickable: true,
+                    loop: true,
+                    spaceBetween: 30,
+                    slideToClickedSlide: true,
+                    autoplay: {
+                        delay: 3000, // Waktu antar slide, dalam milidetik (3 detik)
+                        disableOnInteraction: false, // Tidak berhenti saat user berinteraksi
+                    },
+                    pagination: {
+                        el: ".centered-slide-carousel .swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        1920: {
+                            slidesPerView: 4,
+                            spaceBetween: 30
+                        },
+                        1028: {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        },
+                        990: {
+                            slidesPerView: 1,
+                            spaceBetween: 0
+                        }
+                    }
+                });
         </script>
 
     </body>

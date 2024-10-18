@@ -156,7 +156,7 @@
                         <p class="text-sm text-gray-50 sm:text-lg mt-3">The Longer Journey, better story with Ubud Rafting</p>
 
                         <a
-                            href="#_"
+                            href="https://wa.me/6287861803700?text=Halo%20Ubud%20Rafting.%0A%20I'm%20visitor%20from%20ubudrafting.co.id%20want%20to%20book%20and%20consult%20Facility%20Provider%20Ubud%20Rafting."
                             class=" mt-10 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-green-600 transition duration-300 ease-out border-2 border-green-500 rounded-full shadow-md group">
                             <span
                                 class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-green-500 group-hover:translate-x-0 ease">
